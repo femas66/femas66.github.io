@@ -1,45 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
 <head>
-	<title>Login | Femas</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Femas Akbar Faturrohim</title>
+  <script src="https://kit.fontawesome.com/83685fdc33.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
 </head>
 <body>
-	<img class="wave" src="img/wave.png">
-	<div class="container">
-		<div class="img">
-			<img src="img/bg.svg">
-		</div>
-		<div class="login-content">
-			<form action="index.html">
-				<img src="img/avatar.svg">
-				<h2 class="title">Halaman Login</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#">Lupa password?</a>
-            	<input type="submit" class="btn" value="Login">
-            </form>
-        </div>
+  <nav class="bg-white border-gray-200 w-full fixed">
+    <ul class="flex items justify-center space-x-4 md:space-x-6 my-4 z-50">
+      <li><a href="#home" class="hover:text-[#37B7C3] transition duration-300 text-sm md:text-base cursor-pointer font-medium">Home</a></li>
+      <li><a href="#about" class="hover:text-[#37B7C3] transition duration-300 text-sm md:text-base cursor-pointer font-medium">About</a></li>
+      <li><a href="#projects" class="hover:text-[#37B7C3] transition duration-300 text-sm md:text-base cursor-pointer font-medium">Projects</a></li>
+      <li><a href="#contact" class="hover:text-[#37B7C3] transition duration-300 text-sm md:text-base cursor-pointer font-medium">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="home" class="w-auto h-screen color bg-white flex items-center">
+    <div class="container mx-auto text-center md:text-start">
+      <span class="font-light text-[48px] hidden md:block text-start">Hi, I'am</span>
+      <span class="font-bold text-4xl md:text-5xl text-center text-[#37B7C3]">Femas Akbar Faturrohim</span>
+      <br>
+      <span class="font-light text-[12px] md:text-base text-center md:text-start">A Software engineering student & Fullstack Web Developer based in Jawa Timur, Indonesia</span>
+      <br>
+      <div class="mt-2 space-x-2">
+        <a href="https://github.com/femas66" target="_blank" class="cursor-pointer">
+          <i class="fa-brands fa-github fa-xl hover:text-[#37B7C3] transition duration-300"></i>
+        </a>
+        <a href="https://www.instagram.com/femas.akbar/" target="_blank" class="cursor-pointer">
+          <i class="fa-brands fa-instagram fa-xl hover:text-[#37B7C3] transition duration-300"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/femas-akbar-faturrohim-82b9a9310/" target="_blank" class="cursor-pointer">
+          <i class="fa-brands fa-linkedin fa-xl hover:text-[#37B7C3] transition duration-300"></i>
+        </a>
+      </div>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
+  </section>
+  <section id="about" class="w-auto h-screen color bg-[#f7f7f7] flex items-center">
+    <div class="container mx-auto text-center md:text-start">
+      <span class="font-bold text-4xl md:text-5xl text-center text-[#37B7C3]">About Me</span>
+      <br>
+      <span class="font-light text-[12px] md:text-base text-center md:text-start">Hi, I'm Femas Akbar Faturrohim a high school vocation student majoring in Software Engineering, a lifetime learner, and a Fullstack Web Developer based in Jawa Timur, Indonesia.
+        I am someone who is interested in the world of technology, linux operating systems and open source software development.
+        I love learning new things, even when I'm bored I often learn new things. I fill my free time by learning new things, trying new linux distros, playing games, and sometimes watching anime.</span>
+      
+      <div class="mt-2">
+        <span class="font-bold text-4xl md:text-5xl text-center text-[#37B7C3]">Skillset</span>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="w-full h-screen color bg-white"></section>
+  <section id="contact" class="w-full h-screen colorbg-[#f7f7f7]"></section>
+  <footer class="shadow-md border-t-2 p-5 w-screen">
+    <p class="text-center text-[#37B7C3] text-sm md:text-base font-base">© Copyrights All Rights Reserved by <span class="font-medium">Femas Akbar Faturrohim</span></p>
+  </footer>
 </body>
 </html>
